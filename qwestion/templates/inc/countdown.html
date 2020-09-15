@@ -1,3 +1,4 @@
+{% load static %} <!-- Instruct Django to load static files -->
 <h1 class="countdown-title">Countdown Clock</h1>
 <div id="countdown" class="countdown">
   <div class="countdown-number">
@@ -17,3 +18,5 @@
     <span class="countdown-text">Seconds</span>
   </div>
 </div>
+<script type="text/javascript"> var deadline = new Date(Date.parse("{{ mytimer|date:"F d Y H:i:s " }}GMT+0300")) </script>
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
