@@ -1,0 +1,31 @@
+{%extends 'base.html'%}
+{%block content%}
+{% load crispy_forms_tags %}
+    <h3>Добавление вопроса</h3>
+    <form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+{{ form |crispy }}
+ <br>
+            <fieldset>
+                <legend></legend>
+                {{ answer_form.management_form }}
+                {{ answer_form.non_form_errors }}
+                {% for form in answer_form %}
+                    {{ form.id }}
+                    <div class="inline {{ qwestion_form.prefix }}">
+                        {{ form.title.errors }}
+                        {{ form.title.label_tag }}
+                        {{ form.title |as_crispy_field }}
+                        {{ form.truefild.errors }}
+                        {{ form.truefild.label_tag }}
+                        {{ form.truefild |as_crispy_field }}
+
+                    </div>
+
+
+                {% endfor %}
+            </fieldset>
+
+ <button class="btn btn-primary" type="submit" name="submit">Добавить</button>
+    </form>
+{%endblock%}

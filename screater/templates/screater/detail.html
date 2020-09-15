@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+
+  {{ forms.survey_form.as_p }}
+  <label>qwestion</label>
+  {{ forms.qwestion_form.as_p }}
+  <label>Background photo</label>
+  {{ forms.answer_form.as_p }}
+  <input class="btn btn-primary" type="submit" value="submit"/>
+</form>
+{% endblock %}

@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+<div class="center">
+    <!-- Create a Form -->
+    <form method="POST">
+        <!-- Security token by Django -->
+        {% csrf_token %}
+        Вы действительно хотите удалить вопрос ?
+        <br>
+        <div class="card">
+            <div class="card-body">
+             {{object.title}}
+             </div>
+        </div>
+        <br>
+        <p>
+       <button type="submit" class="btn btn-danger">Удалить</button>
+        <a class="btn btn-primary" data-toggle="collapsing"  href="{% url 'screater:qwestion-list' %}" role="button" aria-expanded="false">Отмена </a>
+        </p>
+    </form>
+</div>
+
+{% endblock %}

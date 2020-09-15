@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}start {% endblock %}
+{% block content %}
+<div class="text-center">
+<h3>Уважаемый {{username}}</h3><h3> тестирование на тему </h3>
+<h1>{{survey}}</h1><h3> завершено !!!!!</h3>
+<h1>Результаты тестирования : </h1>
+
+<h3>Количество вопросов в тесте: {{count}}</h3>
+<h3>Количество правильных ответов в тесте: {{right}}</h3>
+<h3>Процент выполнения: {{procent}}%</h3>
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}index {% endblock %}
+{% block content %}
+    <h1> Выберите тест для сдачи</h1>
+<ul class="list-group">
+{% for s in survey %}
+    <li class="list-group-item">
+        <a href="{{s.get_absolute_url}}" class="stretched-link"> {{s.title}} </a>
+    </li>
+{% endfor %}
+</ul>
+{% endblock %}

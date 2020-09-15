@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}index {% endblock %}
+{% block content %}
+    <h1> Report</h1>
+{% for r in rating %}
+ {{r.survey}} {{r.created}} {{r.username}} -- {{r.count}}<br>
+{% endfor %}
+{% endblock %}
