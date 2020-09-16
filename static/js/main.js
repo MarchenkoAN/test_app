@@ -23,10 +23,8 @@ function initializeClock(id, endtime) {
   function updateClock() {
     var t = getTimeRemaining(endtime);
     if (t.total <= 0) {
-      document.getElementById("countdown").className = "hidden";
-      location.reload();
-      clearInterval(timeinterval);
-      return true;
+        document.getElementById("countdown").className = "hidden";
+        location.reload();
 
     }
     //daysSpan.innerHTML = t.days;
@@ -34,12 +32,7 @@ function initializeClock(id, endtime) {
     minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
     secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
-    if (t.total <= 0) {
-      document.getElementById("countdown").className = "hidden";
-      location.reload();
-      clearInterval(timeinterval);
-      return true;
-    }
+
   }
 
   updateClock();
