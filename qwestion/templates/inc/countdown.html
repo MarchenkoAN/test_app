@@ -3,10 +3,6 @@
 <h1 class="countdown-title">Countdown Clock</h1>
 <div id="countdown" class="countdown">
   <div class="countdown-number">
-    <span class="days countdown-time"></span>
-    <span class="countdown-text">Days</span>
-  </div>
-  <div class="countdown-number">
     <span class="hours countdown-time"></span>
     <span class="countdown-text">Hours</span>
   </div>
@@ -19,5 +15,5 @@
     <span class="countdown-text">Seconds</span>
   </div>
 </div>
-<script type="text/javascript"> var deadline = new Date({{ mytimer|date:"Y"}},{{ mytimer|date:"n"}},{{ mytimer|date:"j"}},{{ mytimer|date:"G"}},{{ mytimer|date:"i"}},{{ mytimer|date:"s"}},{{ mytimer|date:"u"}} ) </script>
+<script type="text/javascript"> var deadline = new Date({{ mytimer|date:"Y"}},{{ mytimer|date:"m"}},{{ mytimer|date:"d"}},{{ mytimer|date:"H"}},{{ mytimer|date:"i"}},{{ mytimer|date:"s"}} ) </script>
 <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
