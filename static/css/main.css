@@ -1,6 +1,5 @@
 body {
   text-align: center;
-  background: #00ecb9;
   font-family: sans-serif;
   font-weight: 100;
 }
@@ -39,4 +38,8 @@ body {
   display: block;
   padding-top: 5px;
   font-size: 16px;
+}
+
+.hidden{
+  display: none;
 }
