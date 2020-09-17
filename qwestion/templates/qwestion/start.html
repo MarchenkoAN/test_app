@@ -1,9 +1,12 @@
 {% extends "base.html" %}
 {% block title %}start {% endblock %}
 {% load crispy_forms_tags %}
+{% block counter %}
+    {% include 'inc/countdown.html' %}
+{% endblock %}
 {% block content %}
 
-{% include 'inc/countdown.html' %}
+
 
 <form  class="uniForm blueForms" method="POST">
 

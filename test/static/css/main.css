@@ -3,11 +3,14 @@ body {
   font-family: sans-serif;
   font-weight: 100;
 }
-
+.countdown-block {
+    margin: 10px 0px 10px;
+    text-align: right;
+}
 .countdown-title {
   color: #396;
   font-weight: 100;
-  font-size: 40px;
+  font-size: 12px;
   margin: 40px 0px 20px;
 }
 
@@ -17,7 +20,7 @@ body {
   display: inline-block;
   font-weight: 100;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .countdown-number {
@@ -37,7 +40,7 @@ body {
 .countdown-text {
   display: block;
   padding-top: 5px;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .hidden{
