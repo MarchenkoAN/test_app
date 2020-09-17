@@ -8,7 +8,7 @@ body {
     text-align: right;
 }
 .countdown-title {
-  color: #396;
+  color: #000000;
   font-weight: 100;
   font-size: 12px;
   margin: 40px 0px 20px;
@@ -26,14 +26,14 @@ body {
 .countdown-number {
   padding: 10px;
   border-radius: 3px;
-  background: #00bf96;
+  background: #808080;
   display: inline-block;
 }
 
 .countdown-time {
   padding: 15px;
   border-radius: 3px;
-  background: #00816a;
+  background: #000000;
   display: inline-block;
 }
 
