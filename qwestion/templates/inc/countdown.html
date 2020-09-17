@@ -1,0 +1,21 @@
+{% load static %} <!-- Instruct Django to load static files -->
+{% load filter %}
+<div class="countdown-block">
+<h1 class="countdown-title">Время до окончания тестирования</h1>
+<div id="countdown" class="countdown">
+  <div class="countdown-number">
+    <span class="hours countdown-time"></span>
+    <span class="countdown-text">Часы</span>
+  </div>
+  <div class="countdown-number">
+    <span class="minutes countdown-time"></span>
+    <span class="countdown-text">Минуты</span>
+  </div>
+  <div class="countdown-number">
+    <span class="seconds countdown-time"></span>
+    <span class="countdown-text">Секунды</span>
+  </div>
+</div>
+</div>
+<script type="text/javascript"> var deadline = new Date({{ mytimer|dateWithZeroBasedMonth}}) </script>
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>

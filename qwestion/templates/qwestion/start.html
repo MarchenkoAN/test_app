@@ -1,14 +1,12 @@
 {% extends "base.html" %}
 {% block title %}start {% endblock %}
 {% load crispy_forms_tags %}
+{% block counter %}
+    {% include 'inc/countdown.html' %}
+{% endblock %}
 {% block content %}
 
-<div class="panel panel-default">
-  <div class="panel-body" >
-      <p><span id="my_timer" style="color: #f00; font-size: 150%; font-weight: bold;">Окончание времени теста : {{ mytimer|time:"h:i a" }}</span></p>
-  </div>
-</div>
-<h1> {{qwestion.survey}}</h1>
+
 
 <form  class="uniForm blueForms" method="POST">
 
