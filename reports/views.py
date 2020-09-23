@@ -80,9 +80,9 @@ class RatingToXls(View):
         ratings = Rating.objects.all()
         survey = self.request.GET.get('survey','')
         if (survey!=''):
-            print(ratings)
+            # print(ratings)
             ratings = Rating.objects.filter(survey__pk=int(survey))
-            print(ratings)
+            # print(ratings)
         response = HttpResponse(
                 content_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
             )
